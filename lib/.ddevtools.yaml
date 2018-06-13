@@ -1,0 +1,7 @@
+init: false
+
+provider:
+  name:
+  package_json: /Resources/Build/
+  custom_build:
+  custom_watch:

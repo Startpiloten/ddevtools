@@ -1,0 +1,17 @@
+{
+  "name": "analogde/ddevtools",
+  "license": "GPL-2.0",
+  "description": "Tools for TYPO3 running in a ddev environment",
+  "type": "tool",
+  "authors": [
+    {
+      "name": "Analog",
+      "email": "info@analog.de"
+    },
+    {
+      "name": "Boris Schauer",
+      "email": "me@bschauer.de"
+    }
+  ],
+  "minimum-stability": "dev"
+}

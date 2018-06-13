@@ -1,0 +1,32 @@
+{
+  "name": "ddevtools",
+  "version": "1.0.0",
+  "description": "Tools for TYPO3 running in a ddev environment",
+  "author": "Boris Schauer",
+  "license": "GPL-2.0",
+  "scripts": {
+    "-- DDEV --": "",
+    "ddev:start": "cd ../../../ && ddev start",
+    "ddev:stop": "cd ../../../ && ddev stop",
+    "ddev:describe": "cd ../../../ && ddev describe",
+    "ddev:logs": "cd ../../../ && ddev logs -f",
+    "-- Composer --": "",
+    "ddev:composer:install": "cd ../../../ && ddev . composer install -d /var/www/html",
+    "ddev:composer:update": "cd ../../../ && ddev . composer update -d /var/www/html",
+    "-- Builds --": "",
+    "node:delete:node_modules": ". bin/script.sh --node_delete_node_modules",
+    "node:install:package": ". bin/script.sh --node_install_package",
+    "node:run:build": ". bin/script.sh --node_run_build",
+    "node:run:watch": ". bin/script.sh --node_run_watch",
+    "-- TYPO3 Console --": "",
+    "console:all": "npm run console:cache:flush && npm run console:database:updateschema && npm run console:install:fixfolderstructure",
+    "console:cache:flush": "cd ../../../ && ddev . php ../typo3cms cache:flush --force",
+    "console:database:updateschema": "cd ../../../ && ddev . php ../typo3cms database:updateschema",
+    "console:install:fixfolderstructure": "cd ../../../ && ddev . php ../typo3cms install:fixfolderstructure",
+    "-- sync --": "",
+    "db:import": "cd ../../../ && ddev import-db --src=db.sql",
+    "-- debug --": "",
+    "script:test:yaml": ". bin/script.sh --test",
+    "script:debug:variables": ". bin/script.sh --debug"
+  }
+}
