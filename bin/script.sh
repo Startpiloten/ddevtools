@@ -23,6 +23,7 @@ cd ../../../
 # Check YAML files
 if [ ! -f .ddevtools.yaml ]; then
     echo ".ddevtools.yaml not found!"
+    cp ./vendor/analogde/ddevtools/lib/.ddevtools.yaml .ddevtools.yaml
     exit
 fi
 if [ ! -f .mage.yml ]; then
@@ -51,6 +52,7 @@ testYaml() {
     echo $config_provider_name
     echo $config_provider_package_json
     echo $mage_magephp_environments_develop_user
+    echo
 }
 
 ## ddevtools commands >> START ##

@@ -1,7 +1,7 @@
 init: false
 
 provider:
-  name:
+  name: myproviderext
   package_json: /Resources/Build/
   custom_build:
   custom_watch:
