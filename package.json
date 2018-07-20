@@ -23,6 +23,7 @@
     "console:cache:flush": "cd ../../../ && ddev . php ../typo3cms cache:flush --force",
     "console:database:updateschema": "cd ../../../ && ddev . php ../typo3cms database:updateschema",
     "console:install:fixfolderstructure": "cd ../../../ && ddev . php ../typo3cms install:fixfolderstructure",
+    "console:install:extensionsetupifpossible": "cd ../../../ && ddev . php ../typo3cms install:extensionsetupifpossible",
     "-- sync --": "",
     "db:import": "cd ../../../ && ddev import-db --src=db.sql",
     "-- debug --": "",
